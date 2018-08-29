@@ -1,6 +1,6 @@
 # HTML Template
 
-Follow the steps below to use this template to build a visual narrative.
+Follow the steps below to customize the HTML template in this repository. [This link](http://assets.runemadsen.com/shanghai/index.html) shows an online version of the template.
 
 1.  Click the green "Clone or Download" button, and then "Download ZIP".
 1.  Unzip the downloaded file and open the `index.html` file in a text editor
