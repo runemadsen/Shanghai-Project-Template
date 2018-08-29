@@ -11,19 +11,19 @@ The template was created by Chuyi Zhang and Zijin Gao at NYU Shanghai's IMA prog
 
 # Map Template
 
-The guide below shows how to create a map of Shanghai with your own data on Carto, as demonstrated in [this Carto map](https://jd3036.carto.com/builder/699904d2-7ae0-4be9-84c3-2f2e370fc263/embed).
+The guide below shows how to create a map of Shanghai with Carto using your own data. [This Carto map](https://jd3036.carto.com/builder/699904d2-7ae0-4be9-84c3-2f2e370fc263/embed) shows the final result.
 
 ## Getting Started
 
 ### Dashboard
 
-The dashboard is the place user can access their online map files on Carto’s website. You may open your previous work or create a new map in the dashboard.
+The dashboard is the place to acces all online map files under an account . You may open your previous work or create a new map in the dashboard.
 
 ![Carto 13](assets/carto24.png)
 
 ### Creating a map
 
-If you have a Carto map file (xx.carto), you can simply drag and drop the file to this dashboard to upload it. To create a new map file, click the button “NEW MAP” on the top-right corner. Then it will lead you to the dataset page. On this page, you may see the existing datasets or you may drag and drop a CSV, XLS, ZIP, KML, GPX file here to upload your dataset. Here, we use the existing dataset “thisFile” to create the map (select it and click on the button in bottom-right corner “CREATE MAP”).
+If you have a Carto map file (`.carto`), you can simply drag and drop the file to this dashboard to upload it. To create a new map file, click the “NEW MAP” button in the top-right corner. This will lead you to the dataset page. On this page, you see your existing datasets, or you may drag and drop a `.csv`, `.xls`, `.zip`, `.kml` or `.gpx` file here to upload your dataset. Here, we use the existing dataset “thisFile” to create the map (select it and click on the “CREATE MAP” button in bottom-right corner).
 
 ![Carto 2](assets/carto22.png)
 
@@ -31,13 +31,13 @@ If you have a Carto map file (xx.carto), you can simply drag and drop the file t
 
 #### Basic Functions
 
-This is the initial presence of the newly created map (if there’s GPS coordinates information in the dataset). When clicking on the “more options” (aka. The three dots) next to the map name, there’s a menu where you may edit/delete/download the map. It is highly recommended to download your xx.carto map file as a backup because all your edits on the css and html will be saved in the xx.carto file along with the data.
+If the dataset has GPS coordinates, it will look like the following screenshot. If you click the “More options” button (the three dots) next to the map name, there’s a menu where you may edit/delete/download the map. It is highly recommended to download your `.carto` map file as a backup as you go along. All your edits to the CSS and HTML code will be saved in the `.carto` file along with the data.
 
 ![Carto 3](assets/carto13.png)
 
 #### Changing Basemap
 
-To change the basemap, you may click the “BASEMAP” bar to browse more options. For example, in this case we choose Mapbox basemap for the project.
+You can click the “BASEMAP” bar to browse more options for basemaps. In this case, we are using the Mapbox basemap.
 
 ![Carto 4](assets/carto14.png)
 
@@ -45,7 +45,7 @@ To change the basemap, you may click the “BASEMAP” bar to browse more option
 
 #### Editing data points
 
-The individual data points could be edited in the map interface. When you move the cursor to the data point, there will be a pen icon.
+The individual data points can be edited directly in the map interface. When you move the cursor to the data point, click the pen icon.
 
 ![Carto](assets/carto15.png)
 
@@ -76,11 +76,11 @@ C. “POP-UP” is to create the information window for each data point. The typ
 ![Carto](assets/carto21.png)
 ![Carto](assets/carto2.png)
 
-Since the pop-up is in HTML, it makes it possible for us to embed media files in addition to pure text in the pop-up window. If you have the url(s) linked towards the media file, then you can edit the url(s) in the dataset with some HTML coding to embed them in. We will introduce how to format the data entries in the next section in 2.4.
+Since the pop-up is in HTML, it makes it possible for us to embed media files in addition to pure text in the pop-up window. If you have the URLs for your media files, you can embed them with HTML in the map. We will introduce how to format the data entries in the next section in 2.4.
 
 ### Dataset
 
-You may access the datasets through the dashboard.
+You may access the dataset through the dashboard.
 
 ![Carto](assets/carto26.png)
 
@@ -119,17 +119,7 @@ Notice: Since there’s always offset of GPS location in China, it is highly rec
 
 #### Media file data
 
-It usually goes by as following to embed image in a web page.
-
-```html
-<div><img src="some_url_for_media" width="200" height="200"></div>
-```
-
-As we mentioned before, the pop-up window is HTML. So when the HTML file load the data entries in the dataset and the data is in HTML code format, then the media files can be loaded. (e.g. `{{video_url}}` is loading the video_url cell in the dataset for the specific data points, if the string is in HTML format, then it will work with the HTML code for the pop-up.)
-
-![Carto](assets/carto8.png)
-
-To be concise, what you need to do for the media file data columns is:
+As we mentioned before, you can write HTML directly in the data point's pop-up window. This is the HTML required for different media types:
 
 **Image:** `<IMG SRC="url_of_image_file" ALT="image not available" WIDTH=160 HEIGHT=160>`. _Check the [HTMl img tag reference](https://www.w3schools.com/tags/tag_img.asp)_
 
@@ -143,7 +133,7 @@ To be concise, what you need to do for the media file data columns is:
 
 ![Carto](assets/carto11.png)
 
-You can upload your files via Google Drive and use them in Carto like this:
+If you don't have a file server, you can upload your files via Google Drive and use them in Carto like this:
 
 1.  Set the file as public on the web
 1.  Get the URL of the shared file:
