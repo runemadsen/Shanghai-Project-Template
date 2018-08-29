@@ -150,3 +150,5 @@ You can upload your files via Google Drive and use them in Carto like this:
     (e.g. `https://drive.google.com/file/d/1ssjOehZzBBY5-jVqj860pP8_MWnYKh7A/view?usp=sharing`)
 1.  Edit it into the following structure: `https://drive.google.com/uc?export=view&id=1ssjOehZzBBY5-jVqj860pP8_MWnYKh7A`
 1.  Embed the link into the data as show above.
+
+This guide was written by Jiaqi Dong at NYU Shanghai's IMA program.
