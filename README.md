@@ -35,6 +35,6 @@ This is the initial presence of the newly created map (if there’s GPS coordina
 
 To change the basemap, you may click the “BASEMAP” bar to browse more options. For example, in this case we choose Mapbox basemap for the project.
 
-![Carto 4](assets/cart4.png)
+![Carto 4](assets/carto4.png)
 
-![Carto 5](assets/cart5.png)
+![Carto 5](assets/carto5.png)
